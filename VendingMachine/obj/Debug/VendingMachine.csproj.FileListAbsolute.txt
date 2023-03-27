@@ -1,0 +1,8 @@
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\obj\Debug\VendingMachine.csproj.AssemblyReference.cache
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\obj\Debug\VendingMachine.csproj.SuggestedBindingRedirects.cache
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\obj\Debug\VendingMachine.csproj.CoreCompileInputs.cache
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\bin\Debug\VendingMachine.exe.config
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\bin\Debug\VendingMachine.exe
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\bin\Debug\VendingMachine.pdb
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\obj\Debug\VendingMachine.exe
+C:\Dev\ASD\Coursework\Practice2\VendingMachine\VendingMachine\obj\Debug\VendingMachine.pdb
