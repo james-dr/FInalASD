@@ -101,6 +101,7 @@ namespace VendingMachine {
 
             if ( !machine.CheckItemAvailability(choice)) {
                 Console.WriteLine("* out of stock *");
+                Console.ReadLine();
                 return;
             }
             // Receive money

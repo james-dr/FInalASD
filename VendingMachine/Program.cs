@@ -9,7 +9,7 @@ namespace VendingMachine {
     internal class Program {
         static void Main(string[] args) {
             List<Snack> snacks = new List<Snack>();
-            Snack s1 = new Snack("Cola", 1.50, 10);
+            Snack s1 = new Snack("Cola", 1.50, 0);
             Snack s2 = new Snack("Choc Bar", 1.25, 10);
             Snack s3 = new Snack("Skittles", 1.7, 10);
             Snack s4 = new Snack("Bikkies", 1.7, 10);
