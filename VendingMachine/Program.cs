@@ -18,6 +18,7 @@ namespace VendingMachine {
             CoinPool startingChange = new CoinPool(new TwoPound(2), new OnePound(3), new FiftyPence(4), new TwentyPence(5), new TenPence(10), new FivePence(20));
             VendingMachine machine = new VendingMachine(snacks, startingChange);
             Menu menu = new Menu(machine);
+            machine.Admin = new Admin(1011, "");
             menu.MainMenu();
 
         }

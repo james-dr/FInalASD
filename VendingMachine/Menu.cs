@@ -20,16 +20,22 @@ namespace VendingMachine {
             Console.WriteLine(String.Format("{0,-4}{1,-10} -- {2,-6} -- {3,-10}", "", "Snack", "Price", "QTY"));
             Console.WriteLine(machine.GetSnackData());
             Console.Write("Please enter choice: > ");
-
-            int choice = Convert.ToInt32(Console.ReadLine()) - 1;
-            if (choice + 1 == machine.Admin.Code) {
-                Console.Write("Password: ");
-                string passwd = Console.ReadLine();
-                if (passwd.Equals(machine.Admin.Passwd)) {
-                   AdminMenu();
+            try {
+                int choice = Convert.ToInt32(Console.ReadLine()) - 1;
+                if (choice + 1 == machine.Admin.Code) {
+                    Console.Write("Password: ");
+                    string passwd = Console.ReadLine();
+                    if (passwd.Equals(machine.Admin.Passwd)) {
+                        AdminMenu();
+                    }
                 }
+                TransactionMenu(choice);
             }
-            TransactionMenu(choice);
+            catch (Exception e) {
+                //Console.WriteLine(e);
+                Console.WriteLine("Error occured, try again. (Enter to continue)");
+                Console.ReadLine();
+            }
             MainMenu();
         }
         
@@ -44,6 +50,7 @@ namespace VendingMachine {
                 Console.WriteLine("3. See total money in machine");
                 Console.WriteLine("4. Return to menu");
                 Console.Write("Choose option: ");
+
                 int choice = Convert.ToInt32(Console.ReadLine());
                 if (choice == 4) {
                     break;

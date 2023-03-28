@@ -10,7 +10,6 @@ namespace VendingMachine {
         public TenPenceHandler(CoinHandler next) : base(next) { }
         public override bool HandleCoin(Transaction trans, bool method, VendingMachine machine) {
             int coinInMachine = machine.change.tenPence.Quantity;
-            int coinChangeAmount = trans.ChangeGiven.tenPence.Quantity;
             decimal coinVal = machine.change.tenPence.Value;
             if (method.Equals(false)) {
                 machine.change.tenPence.Quantity += trans.MoneyReceived.tenPence.Quantity;

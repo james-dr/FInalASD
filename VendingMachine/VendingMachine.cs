@@ -13,7 +13,6 @@ namespace VendingMachine {
         public VendingMachine(List<Snack> snacks, CoinPool change) {
             SnacksForSale = snacks;
             this.change = change;
-            Admin = new Admin(1011, "A5144l");
         }
          public string GetSnackData() {
             string snackData = "";
